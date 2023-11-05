@@ -1,0 +1,19 @@
+modules:
+  jira:projectPage:
+    - key: highview-hello-world-project-page
+      function: main
+      title: HighView
+  function:
+    - key: main
+      handler: index.run
+permissions:
+  scopes:
+    - 'read:jira-work'
+  external:
+    fetch:
+      backend:
+        - 'https://api.openai.com'    
+    images:
+      - 'https://fireflywp.com/wp-content/uploads/2023/10/highviewlogob.png'
+app:
+  id: ari:cloud:ecosystem::app/6a48c9f8-0b84-4b5b-9bca-c9fd7d17b075
